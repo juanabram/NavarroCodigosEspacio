@@ -1,0 +1,28 @@
+package Looping_Through_a_Collection;
+
+//Import the ArrayList class and the Iterator class
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class Looping_Through_a_Collection {
+	public static void main(String[] args) {
+
+		// Make a collection
+		ArrayList<String> cars = new ArrayList<String>();
+		cars.add("Volvo");
+		cars.add("BMW");
+		cars.add("Ford");
+		cars.add("Mazda");
+
+		// Get the iterator
+		Iterator<String> it = cars.iterator();
+
+		// Print the first item
+		System.out.println(it.next());
+		
+		while(it.hasNext()) {
+			  System.out.println(it.next());
+		}
+	}
+}
